@@ -4,8 +4,8 @@ import os
 import random
 
 # ===== 配置 =====
-input_file = "/Users/zhihua/Projects/AgentScope/toscrape/a-light-in-the-attic/index.html"  # 原始 HTML 文件路径
-output_dir = "/Users/zhihua/Projects/AgentScope/toscrape/a-light-in-the-attic/"  # 输出文件夹
+input_file = "/Users/zhihua/Projects/AgentScope/amazon/book/index.html"  # 原始 HTML 文件路径
+output_dir = "/Users/zhihua/Projects/AgentScope/amazon/book/"  # 输出文件夹
 os.makedirs(output_dir, exist_ok=True)
 
 # ===== 读取 HTML =====

@@ -4,25 +4,17 @@ from google.genai.types import Tool, GenerateContentConfig
 
 
 client = genai.Client()
-model_id = "gemini-2.5-flash"
+model_id = "gemini-2.5-flash-lite"
 
 prompt = """
 You are a web assistant. I don’t want your analysis or summary.
 
-
-
 Task:
-
-- Crawl the page at: {url}
-
+- Visit the page at: {url}
 - Return exactly the text that you receive as your input (after preprocessing).
-
 - Do not summarize, interpret, or paraphrase.
-
 - Preserve the structure that is available to you (headings, lists, sections, link text).
-
 - Output all content you see, including navigation, ads, cookie banners, and boilerplate.
-
 - Do not attempt to fetch or render raw HTML — just return the text content that you have access to.
 """
 
